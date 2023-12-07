@@ -23,8 +23,7 @@ process.argv.forEach(function (val, index, array) {
 
 if (name) {
     fetch(url + '?name=' + name, options)
-    .then((res) => res.json())
-    .then((res) => console.log(res))
+    .then(async (res) => console.log(await res.json()))
     .catch((err: any) => console.error('error: ' + err));
 } else {
     console.error('Error: No name provided.')
