@@ -1,1 +1,1 @@
-# typescript-node
+# typescript-diet-calculator
